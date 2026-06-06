@@ -1,0 +1,11 @@
+# The raw working folder holds ~188 MB of job photos + dupes — never push or serve it.
+# The clean, served site is ./site (built from deploy.zip).
+deploy/
+deploy.zip
+# Local backups
+index.PREBOLD-*.html
+index.BACKUP-*.html
+# OS / sync junk
+Thumbs.db
+desktop.ini
+.DS_Store

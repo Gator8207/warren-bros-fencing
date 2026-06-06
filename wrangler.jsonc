@@ -1,0 +1,11 @@
+{
+  // Warren Bros' deploy/ folder holds ~188 MB of raw job photos + dupes, so we DON'T
+  // serve that. Instead we serve ./site — a clean copy of just the 35 production files
+  // (all 18 pages + referenced web images + robots/sitemap/llms), to the EXISTING
+  // Worker "warrenbrosfencing".
+  "name": "warrenbrosfencing",
+  "compatibility_date": "2026-06-06",
+  "assets": {
+    "directory": "./site"
+  }
+}
