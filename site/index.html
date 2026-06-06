@@ -225,6 +225,7 @@
     html { scroll-behavior: auto; }
     .marquee-track { animation: none !important; }
     .hero::before { animation: none !important; }
+    .hero-aurora span { animation: none !important; }
   }
 
   /* ===== Header ===== */
@@ -293,7 +294,16 @@
   }
   .hero::before { content: ''; position: absolute; top: -28%; right: -8%; width: 60vw; height: 60vw; max-width: 760px; max-height: 760px; background: radial-gradient(circle, rgba(240,168,48,0.20) 0%, transparent 62%); pointer-events: none; animation: heroGlow 9s ease-in-out infinite alternate; }
   @keyframes heroGlow { from { transform: translate(0,0) scale(1); opacity: 0.6; } to { transform: translate(-34px, 26px) scale(1.1); opacity: 1; } }
-  .hero::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 76px; background: var(--cream); clip-path: polygon(0 100%, 100% 100%, 100% 36%, 0 86%); }
+  .hero::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 76px; background: var(--cream); clip-path: polygon(0 100%, 100% 100%, 100% 36%, 0 86%); z-index: 3; }
+  /* Drifting aurora light-field — CSS-only, sits above photo, below content */
+  .hero-aurora { position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
+  .hero-aurora span { position: absolute; display: block; border-radius: 50%; filter: blur(64px); mix-blend-mode: screen; will-change: transform; }
+  .hero-aurora .a1 { width: 42vw; max-width: 540px; height: 42vw; max-height: 540px; left: -6%; top: 4%; background: radial-gradient(circle, rgba(240,168,48,0.55), transparent 66%); animation: auroraDrift1 17s ease-in-out infinite alternate; }
+  .hero-aurora .a2 { width: 36vw; max-width: 460px; height: 36vw; max-height: 460px; right: 2%; top: 26%; background: radial-gradient(circle, rgba(232,95,42,0.42), transparent 66%); animation: auroraDrift2 21s ease-in-out infinite alternate; }
+  .hero-aurora .a3 { width: 32vw; max-width: 400px; height: 32vw; max-height: 400px; left: 28%; bottom: -14%; background: radial-gradient(circle, rgba(126,164,205,0.30), transparent 66%); animation: auroraDrift3 25s ease-in-out infinite alternate; }
+  @keyframes auroraDrift1 { from { transform: translate(0,0) scale(1); } to { transform: translate(58px,42px) scale(1.14); } }
+  @keyframes auroraDrift2 { from { transform: translate(0,0) scale(1.06); } to { transform: translate(-52px,30px) scale(1); } }
+  @keyframes auroraDrift3 { from { transform: translate(0,0) scale(1); } to { transform: translate(44px,-48px) scale(1.18); } }
   .hero-content { position: relative; z-index: 2; display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; align-items: center; }
   .hero-copy { text-align: left; }
   .hero h1, .hero-lede, .hero-promises { text-shadow: 0 2px 16px rgba(0,0,0,0.4); }
@@ -646,6 +656,7 @@
 </header>
 
 <section class="hero">
+  <div class="hero-aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
   <div class="container hero-content">
     <div class="hero-copy">
       <div class="hero-preheader">Straight posts. Straight prices. Straight answers.</div>
