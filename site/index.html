@@ -324,7 +324,7 @@
 
   .hero-form-card { background: #fff; color: var(--text); border-radius: var(--radius); padding: 28px 26px 26px; box-shadow: var(--shadow-lg); border-top: 5px solid var(--orange); position: relative; }
   .hero-form-card::before { content: 'Fast response'; position: absolute; top: -13px; right: 22px; background: var(--ink); color: #fff; font-family: var(--sans); font-size: 0.68rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; }
-  .hero-form-card h3 { color: var(--ink); font-size: 1.5rem; margin-bottom: 4px; }
+  .hero-form-card .quote-h { color: var(--ink); font-size: 1.5rem; margin: 0 0 4px; font-family: var(--display); font-weight: 600; line-height: 1.04; letter-spacing: -0.015em; }
   .hero-form-card .form-sub { color: var(--muted); font-size: 0.92rem; margin-bottom: 18px; font-family: var(--sans); }
   .hero-form-card label { font-size: 0.8rem; margin-bottom: 4px; color: var(--ink); }
   .hero-form-card input, .hero-form-card select { padding: 10px 12px; font-size: 0.95rem; margin-bottom: 10px; }
@@ -375,7 +375,7 @@
   .svc-body .learn-more { display: inline-block; margin-top: 16px; color: var(--orange); font-family: var(--sans); font-weight: 700; font-size: 0.98rem; }
   .svc-body .learn-more:hover { color: var(--orange-dark); text-decoration: underline; }
   .svc-all { text-align: center; margin-top: 36px; }
-  .svc-all a { color: var(--orange); font-family: var(--sans); font-weight: 700; font-size: 1.1rem; }
+  .svc-all a { color: #c4470f; font-family: var(--sans); font-weight: 700; font-size: 1.1rem; }
 
   /* ===== Process ===== */
   .process { background: var(--cream-2); }
@@ -389,7 +389,7 @@
   .step h3 { color: var(--ink); font-size: 1.4rem; margin-bottom: 8px; }
   .step p { color: var(--muted); font-size: 1.0rem; }
   .process-note { text-align: center; margin: 38px auto 0; color: var(--muted); font-size: 1rem; max-width: 760px; }
-  .process-note a { color: var(--orange); font-weight: 700; }
+  .process-note a { color: #c4470f; font-weight: 700; }
 
   /* ===== Why (dark) ===== */
   .diff { background: linear-gradient(165deg, var(--ink) 0%, var(--ink-2) 100%); color: #fff; position: relative; overflow: hidden; }
@@ -530,16 +530,16 @@
   /* ===== Footer ===== */
   footer { background: var(--ink-2); color: #c5cabb; padding: 66px 0 26px; border-top: 4px solid var(--green); }
   .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 44px; margin-bottom: 40px; }
-  footer h4 { color: #fff; font-family: var(--display); margin-bottom: 16px; font-size: 1.1rem; }
+  footer h3 { color: #fff; font-family: var(--display); margin-bottom: 16px; font-size: 1.1rem; font-weight: 600; }
   .footer-logo { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
   .footer-logo img { width: 60px; height: 60px; display: block; flex-shrink: 0; object-fit: contain; border-radius: 14px; background: #fff; padding: 4px; }
-  .footer-logo h4 { margin: 0; font-size: 1.35rem; line-height: 1.2; }
+  .footer-logo h3 { margin: 0; font-size: 1.35rem; line-height: 1.2; }
   footer p { font-family: var(--sans); }
   footer ul { list-style: none; }
   footer ul li { padding: 5px 0; font-family: var(--sans); }
   footer a { color: #aeb3a4; transition: color 0.18s; }
   footer a:hover { color: var(--orange); text-decoration: none; }
-  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.10); padding-top: 22px; text-align: center; font-size: 0.86rem; color: #87897d; font-family: var(--sans); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.10); padding-top: 22px; text-align: center; font-size: 0.86rem; color: #a7a99c; font-family: var(--sans); }
   .footer-bottom em { font-family: var(--display); font-style: italic; color: #a7a99c; }
 
   /* ===== Mobile call bar ===== */
@@ -630,7 +630,7 @@
           <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="#00b246" d="M12 2 L2 10 L4 10 L4 22 L10 22 L10 14 L14 14 L14 22 L20 22 L20 10 L22 10 Z"/></svg>
         </a>
       </div>
-      <a href="tel:+13162859172" class="nav-phone">
+      <a href="tel:+13162859172" class="nav-phone" aria-label="Call Warren Bros Fencing at (316) 285-9172">
         <span class="nav-phone-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
         <span>(316) 285-9172</span>
       </a>
@@ -657,6 +657,7 @@
   </div>
 </header>
 
+<main>
 <section class="hero">
   <div class="hero-aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
   <div class="container hero-content">
@@ -675,9 +676,9 @@
         <a href="#quote" class="cta-btn large outline"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Schedule Free Estimate</a>
       </div>
     </div>
-    <form class="hero-form-card" id="heroQuoteForm" onsubmit="return handleHeroSubmit(event)">
+    <form class="hero-form-card" id="heroQuoteForm" aria-labelledby="heroQuoteTitle" onsubmit="return handleHeroSubmit(event)">
       <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-      <h3>Get a Free Quote</h3>
+      <p class="quote-h" id="heroQuoteTitle">Get a Free Quote</p>
       <p class="form-sub">No pressure. We'll text or call you back fast.</p>
       <div class="form-row">
         <div class="form-group">
@@ -1215,13 +1216,14 @@
   <a href="tel:+13162859172"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Warren Bros — (316) 285-9172</a>
 </div>
 
+</main>
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
           <img src="logo.png" alt="Warren Bros Fencing logo">
-          <h4>Warren Bros Fencing</h4>
+          <h3>Warren Bros Fencing</h3>
         </div>
         <p style="margin-bottom: 12px;">Family-owned cedar fence company in Wichita, KS. Cedar &amp; wood fence installation, wood fence repair, and old fence removal. Built by brothers Grant and Alex Warren — serving Wichita and the surrounding metro since 2021.</p>
         <p><strong>📞 Phone:</strong> <a href="tel:+13162859172" style="color:inherit;">(316) 285-9172</a><br>
@@ -1229,7 +1231,7 @@
            <strong>🕘 Hours:</strong> Open daily 7am–5pm</p>
       </div>
       <div>
-        <h4>Services</h4>
+        <h3>Services</h3>
         <ul>
           <li><a href="/services/cedar-privacy-fence">Cedar &amp; Wood Fence Installation</a></li>
           <li><a href="/services/fence-repair">Wood Fence Repair</a></li>
@@ -1239,7 +1241,7 @@
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="/about">About the Brothers</a></li>
           <li><a href="/blog/">Guides</a></li>
@@ -1247,7 +1249,7 @@
           <li><a href="/faq">FAQ</a></li>
           <li><a href="#quote">Get a Quote</a></li>
         </ul>
-        <h4 style="margin-top: 22px;">Find Us Online</h4>
+        <h3 style="margin-top: 22px;">Find Us Online</h3>
         <ul class="social-list">
           <li><a href="https://maps.app.goo.gl/HaVjmXLtprgsLasB8" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" style="vertical-align: -3px; margin-right: 8px;">
