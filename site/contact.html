@@ -244,7 +244,7 @@
           Free in-person estimates always
         </div>
       </div>
-      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="ghlLead(this)">
         <input type="hidden" name="access_key" value="3457639e-cfb1-4a69-8945-7bfb44c09b44">
         <input type="hidden" name="subject" value="Quote request — Warren Bros Fencing">
         <input type="hidden" name="from_name" value="Warren Bros Fencing Website">
@@ -265,6 +265,17 @@
     </div>
   </div>
 </section>
+
+<script>
+  // Fire the lead into GHL (CRM + speed-to-lead) alongside the normal Web3Forms email submit.
+  // sendBeacon survives the form's page navigation; form-urlencoded avoids any cross-origin block.
+  function ghlLead(f){
+    try {
+      var b = new URLSearchParams(new FormData(f)).toString();
+      navigator.sendBeacon('https://services.leadconnectorhq.com/hooks/GzlZmbO4MaYRYjyMnZ2q/webhook-trigger/b753c2c1-923d-4c92-825e-a2d1e961a204', new Blob([b], {type:'application/x-www-form-urlencoded'}));
+    } catch (e) {}
+  }
+</script>
 
 </main>
 
