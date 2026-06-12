@@ -1291,6 +1291,9 @@
     formData.append('access_key', WEB3FORMS_KEY);
     formData.append('subject', '[WARRENBROS] New quote request from warrenbrosfencing.com');
     formData.append('from_name', 'Warren Bros Fencing Website');
+    // capture campaign source from the URL (utm tags) so each lead is attributed to its channel
+    var _u = new URLSearchParams(location.search);
+    ['utm_source','utm_medium','utm_campaign','utm_content'].forEach(function(k){ var v=_u.get(k); if(v) formData.append(k, v); });
     // also push the lead into GHL (CRM + instant speed-to-lead text) — fire-and-forget
     try {
       fetch(GHL_WEBHOOK, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(formData).toString() });
