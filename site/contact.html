@@ -273,7 +273,8 @@
     try {
       var d = new URLSearchParams(new FormData(f));
       var u = new URLSearchParams(location.search);
-      ['utm_source','utm_medium','utm_campaign','utm_content'].forEach(function(k){ var v=u.get(k); if(v) d.append(k, v); });
+      d.append('utm_source', u.get('utm_source') || 'website');
+      ['utm_medium','utm_campaign','utm_content'].forEach(function(k){ var v=u.get(k); if(v) d.append(k, v); });
       navigator.sendBeacon('https://services.leadconnectorhq.com/hooks/GzlZmbO4MaYRYjyMnZ2q/webhook-trigger/b753c2c1-923d-4c92-825e-a2d1e961a204', new Blob([d.toString()], {type:'application/x-www-form-urlencoded'}));
     } catch (e) {}
   }
