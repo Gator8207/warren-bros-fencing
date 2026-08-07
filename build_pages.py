@@ -17,8 +17,8 @@ BASE = "/sessions/relaxed-gallant-johnson/mnt/Warren Bros Fencing/deploy"
 
 SITE = {
     "name": "Warren Bros Fencing",
-    "phone": "(316) 285-9172",
-    "phone_tel": "+13162859172",
+    "phone": "(316) 618-7440",
+    "phone_tel": "+13166187440",
     "email": "quote@warrenbrosfencing.com",
     "address_city": "Wichita",
     "address_state": "KS",
@@ -764,7 +764,7 @@ def about_schema():
       "addressRegion": "KS",
       "addressCountry": "US"
     },
-    "telephone": "(316) 285-9172"
+    "telephone": "(316) 618-7440"
   }
 }"""
 
@@ -811,7 +811,7 @@ def service_schema_with_faq(service_name, service_url, description, faqs):
         "@type": "FenceContractor",
         "name": "Warren Bros Fencing",
         "url": "https://www.warrenbrosfencing.com/",
-        "telephone": "(316) 285-9172",
+        "telephone": "(316) 618-7440",
         "address": {{
           "@type": "PostalAddress",
           "addressLocality": "Wichita",
@@ -854,7 +854,7 @@ def service_schema(service_name, service_url, description):
     "@type": "FenceContractor",
     "name": "Warren Bros Fencing",
     "url": "https://www.warrenbrosfencing.com/",
-    "telephone": "(316) 285-9172",
+    "telephone": "(316) 618-7440",
     "address": {{
       "@type": "PostalAddress",
       "addressLocality": "Wichita",
@@ -903,7 +903,7 @@ FAQS_DATA = [
      "Most residential installs take 2 to 3 days from start to finish. Larger jobs (over 200 linear feet, multiple gates, slope work, full tear-out of an old fence) can take 3 to 5 days. We aim to start and finish within a single visit — no leaving a half-built fence sitting in your yard between trips. Weather delays in Kansas spring/summer/fall are rare; storm season can push schedules."),
 
     ("What does the estimate process look like?",
-     "You call or text (316) 285-9172. We schedule a free in-person walkthrough at your property, usually within a few days. On-site we measure, talk through height/style/gate placement, and write you a quote on the spot — typically before we leave the property. No high-pressure sales, no \"today only\" pricing, no quote in three days by email. You get the number while we're standing in your yard with you."),
+     "You call or text (316) 618-7440. We schedule a free in-person walkthrough at your property, usually within a few days. On-site we measure, talk through height/style/gate placement, and write you a quote on the spot — typically before we leave the property. No high-pressure sales, no \"today only\" pricing, no quote in three days by email. You get the number while we're standing in your yard with you."),
 
     ("What's included in your price?",
      "Everything: materials (cedar pickets, posts, rails, concrete, hardware), labor for the full crew, post-hole digging, concrete setting, full assembly, hardware installation, and jobsite cleanup. We haul away the old fence debris if there was a tear-out. We don't add fees for \"fuel surcharge\" or \"disposal\" or other line items at the end. The number on your written quote is the number you pay."),
@@ -934,7 +934,7 @@ FAQS_DATA = [
 FAQ_BODY = """
 <section>
   <div class="container-narrow">
-    <p style="font-size: 1.15rem; line-height: 1.6;">Below are the questions we get most often from homeowners across Wichita and the surrounding metro — Derby, Andover, Goddard, Maize, Haysville, Augusta, Park City, Bel Aire, and Valley Center. If you don't see your question here, call or text us at <a href="tel:+13162859172"><strong>(316) 285-9172</strong></a> and we'll answer it directly.</p>
+    <p style="font-size: 1.15rem; line-height: 1.6;">Below are the questions we get most often from homeowners across Wichita and the surrounding metro — Derby, Andover, Goddard, Maize, Haysville, Augusta, Park City, Bel Aire, and Valley Center. If you don't see your question here, call or text us at <a href="tel:+13166187440"><strong>(316) 618-7440</strong></a> and we'll answer it directly.</p>
   </div>
 </section>
 """ + faq_html(FAQS_DATA)
@@ -970,7 +970,7 @@ PAGES = [
         "h1": "About Warren Bros Fencing",
         "h1_kicker": "Built by brothers. Built for Kansas.",
         "lede": "Family-owned cedar fence company in Wichita, founded in 2021. When you call, you're talking to one of the brothers.",
-        "cta_primary": "Call (316) 285-9172",
+        "cta_primary": "Call (316) 618-7440",
         "cta_secondary": "Request a free estimate",
         "body": ABOUT_BODY,
         "schema": about_schema(),
@@ -979,12 +979,12 @@ PAGES = [
         "filename": "contact.html",
         "path_prefix": "",
         "title": "Contact Warren Bros Fencing — Free Estimates in Wichita, KS",
-        "meta": "Get a free in-person estimate for cedar fence installation, repair, gate installation, or fence removal in Wichita, KS. Call or text Warren Bros at (316) 285-9172.",
+        "meta": "Get a free in-person estimate for cedar fence installation, repair, gate installation, or fence removal in Wichita, KS. Call or text Warren Bros at (316) 618-7440.",
         "canonical": "https://www.warrenbrosfencing.com/contact.html",
         "h1": "Get a free in-person estimate",
         "h1_kicker": "No deposits · No pressure · No callcenter",
         "lede": "Call or text us. We'll set up a property visit within one business day and give you a written quote on the spot.",
-        "cta_primary": "Call (316) 285-9172",
+        "cta_primary": "Call (316) 618-7440",
         "cta_secondary": "Text us a photo",
         "body": CONTACT_BODY,
         "schema": contact_schema(),
@@ -998,7 +998,7 @@ PAGES = [
         "h1": "Cedar fence services in Wichita and the metro",
         "h1_kicker": "Built by brothers · Free estimates · Written quotes on the spot",
         "lede": "Installation, repair, gates, and removal — handled by the same two people who build the fence.",
-        "cta_primary": "Call (316) 285-9172",
+        "cta_primary": "Call (316) 618-7440",
         "cta_secondary": "Request a free estimate",
         "body": SERVICES_INDEX_BODY,
         "schema": services_index_schema(),
@@ -1012,7 +1012,7 @@ PAGES = [
         "h1": "Cedar Privacy Fence Installation in Wichita, KS",
         "h1_kicker": "$40-$55/ft &middot; 6ft &amp; 8ft &middot; Free estimates",
         "lede": "The most common request we get. Solid-board cedar privacy fence, built for Kansas weather, with a written quote on the spot.",
-        "cta_primary": "Call (316) 285-9172",
+        "cta_primary": "Call (316) 618-7440",
         "cta_secondary": "Get a written quote",
         "body": CEDAR_BODY + faq_html([
             ("How much does a cedar privacy fence cost in Wichita?",
@@ -1053,7 +1053,7 @@ PAGES = [
         "h1": "Fence Repair in Wichita, KS",
         "h1_kicker": "$250-$800 typical &middot; Same- or next-day &middot; Storm damage",
         "lede": "Most fence issues can be repaired without replacing the whole run. We do same- or next-day repair work across the Wichita metro, and we partner with Baker Tree Service for storm cleanup that involves tree damage.",
-        "cta_primary": "Call (316) 285-9172",
+        "cta_primary": "Call (316) 618-7440",
         "cta_secondary": "Text us a photo",
         "body": REPAIR_BODY + faq_html([
             ("How much does fence repair cost in Wichita?",
@@ -1065,7 +1065,7 @@ PAGES = [
             ("How long does it take to repair a fence after storm damage?",
              "Single-section storm repairs are typically same- or next-day jobs when our schedule allows. After a major storm event (when many fences across Wichita are down at once), we prioritize by severity and try to get every storm-damage call assessed within 2-3 business days. For tree-on-fence damage, see the storm damage section above — we partner with Baker Tree Service for tree removal before we rebuild."),
             ("Do you offer emergency or same-day fence repair?",
-             "When scheduling allows, yes. We aim for same- or next-day service for urgent situations (dog containment failure, security concerns, storm damage to a yard with kids or pets). Call us at (316) 285-9172 — text a photo if you can — and we tell you honestly whether we can get there today, tomorrow, or what the wait looks like."),
+             "When scheduling allows, yes. We aim for same- or next-day service for urgent situations (dog containment failure, security concerns, storm damage to a yard with kids or pets). Call us at (316) 618-7440 — text a photo if you can — and we tell you honestly whether we can get there today, tomorrow, or what the wait looks like."),
         ]),
         "schema": service_schema_with_faq(
             "Fence Repair",
@@ -1081,7 +1081,7 @@ PAGES = [
                 ("How long does it take to repair a fence after storm damage?",
                  "Single-section storm repairs are typically same- or next-day. After major storms with many fences down, we prioritize by severity and assess every call within 2-3 business days."),
                 ("Do you offer emergency or same-day fence repair?",
-                 "When scheduling allows, yes — for urgent situations like dog containment failures or storm damage. Call (316) 285-9172."),
+                 "When scheduling allows, yes — for urgent situations like dog containment failures or storm damage. Call (316) 618-7440."),
             ]
         ),
     },
@@ -1094,7 +1094,7 @@ PAGES = [
         "h1": "Cedar Pedestrian Gate Installation in Wichita, KS",
         "h1_kicker": "Walk-through gates &middot; Yard gates &middot; Hardware upgrades",
         "lede": "Single walk-through gates and double-leaf yard gates built to match your existing fence. Pedestrian access only — we don't install driveway or vehicle gates.",
-        "cta_primary": "Call (316) 285-9172",
+        "cta_primary": "Call (316) 618-7440",
         "cta_secondary": "Request a quote",
         "body": GATE_BODY + faq_html([
             ("How much does a fence gate cost installed?",
@@ -1130,7 +1130,7 @@ PAGES = [
         "h1": "Fence Removal and Tear-Out in Wichita, KS",
         "h1_kicker": "Per-job pricing &middot; Bundled with new install",
         "lede": "Pull out the old fence — posts, concrete footings, and debris. Often bundled at a discount with a new install on the same line.",
-        "cta_primary": "Call (316) 285-9172",
+        "cta_primary": "Call (316) 618-7440",
         "cta_secondary": "Get a written quote",
         "body": REMOVAL_BODY + faq_html([
             ("How much does old fence removal cost in Wichita?",
@@ -1166,7 +1166,7 @@ PAGES = [
         "h1": "Frequently asked questions",
         "h1_kicker": "Honest answers to what Wichita homeowners ask us most",
         "lede": "Cost, HOA approval, gates, repair, storm damage, timelines — the questions we field over and over, answered straight.",
-        "cta_primary": "Call (316) 285-9172",
+        "cta_primary": "Call (316) 618-7440",
         "cta_secondary": "Request a free estimate",
         "body": FAQ_BODY,
         "schema": faq_page_schema(FAQS_DATA),
